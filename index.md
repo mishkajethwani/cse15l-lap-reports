@@ -1,119 +1,49 @@
-# PART 1 
-### Input
-I used the following code to create a web server called StringServer. 
-```Java
-import java.io.IOException;
-import java.net.URI;
+# Researching Commands 
 
-class Handler implements URLHandler {
-    String str= new String();
-public String handleRequest(URI url) {
-        if (url.getPath().equals("/")) {
-            return String.format("undefined");
-        } else {
-            System.out.println("Path:" + url.getPath());
-            if (url.getPath().contains("/add-message")) {
-                String[] parameters = url.getQuery().split("=");
-                if (parameters[0].equals("s")) {
-                    str += parameters[1] + "\n";
-                    return String.format(str);
-                }
-            }
-        return "404 Not Found!";
-        }
-    }
-}
+I decided to choose the command find and find 4 interesting command-line options to use with it. To do so, I asked chat gpt for suggestions. <br>
+![Image](one.png)
+I decided to use the the following four commands: <br>
+1. "find /path/to/directory -size" <br> 
+2. "find /path/to/directory -type" <br>
+3. "find /path/to/directory -mtime" <br>
+4. "find /path/to/directory -name" <br>
 
-class StringServer {
-    public static void main(String[] args) throws IOException {
-        if(args.length == 0){
-            System.out.println("Missing port number! Try any number between 1024 to 49151");
-            return;
-        }
+### SIZE 
 
-        int port = Integer.parseInt(args[0]);
+To get files greater than or smaller than a certain size, this command is used. The command is  "find /path/to/directory -size" followed by a +/- sign and the size of the file. + is used to get files of sizes greater than the specified amount and - is used to get files smaller than the specified amount.<br>
+For exmaple, In the first command I used *find * -size -10M*, which gave me all the files smaller than 10 MB.
+![Image](two.png) <br> 
+In the second example I used "find * -size +5M" which gave all the files that were bigger in size than 5MB, which didnt exsist so it displayed nothing.
+![Image](three.png)<br> 
 
-        Server.start(port, new Handler());
-    }
-}
-```
-### Output
-I first entered the text "first try" 
-![Image](ss1.png)
-then I entered "second try" 
-![Image](ss2.png)
-and then " third try" 
-![Image](ss3.png)
+## TYPE
 
-All of them get concated into the string and appear one below the other due to the added new line character.<br>
-
-We run StringServer.java, that invokes the main method. Where the server object passes the port number and handler Object as arguments. 
-The server uses the method handleRequests in class Handler which handles all the URIs. <br>
-The URI and the String "str" used changes its values.
-
-# PART 2 
- ### A failure-inducing input for the buggy program.
- ```Java
- \public class ArrayTests {
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = {0,9,8};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{8,9,0}, input1);
-	}
-  ```
+This used to get particular types, such as f is used to get files and d is used to get directories. <br> 
+Here, In the first example I used find * -type d to get all the directories.
+![Image](four.png) <br> 
+In the second example I used * -type d to get all the files. 
+![Image](five.png) <br> 
 
 
-### An input that doesn’t induce a failure
-```Java
-public class ArrayTests {
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = {0,0,0};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{0,0,0}, input1);
-	}
-```
+## TIME
+
+This is used to find files based on the time they were last modified or accessed usimg -mtime and -atime respectively. <br> 
+For example, I used "find * -mtime +7" to get all the files that were modified more than 7 days ago.
+![Image](six.png) <br> 
+Next I used "find * -atime +8" to get all the files that were accessed more than 8 days ago. 
+![Image](seven.png) <br> 
+
+## NAME
+
+In this I used multiple command-line operators to do specific tasks. 
+First, I used "find travel guides/berlitzl/ -name "*.txt" -delete" to delete all the .txt files in the berlitz one folder. This can be seen in the picture below, as I have displayed all the files before and after using the command using ls. 
+![Image](eight.png) <br> 
+Then, I used a command to cat the file "California-History" to display the contents of that file. 
+![Image](nine.png) <br> 
 
 
-### The symptom, as the output of running the tests 
-
-![Image](ss4.png)
-
-### The bug, as the before-and-after code change required to fix it
-
-#### BEFORE
-```Java
-public class ArrayExamples {
 
 
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-  ```
-  #### AFTER
- ```Java
-public class ArrayExamples {
-
-
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length/2; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-      int alt = arr[i];
-     arr[arr.length - i - 1] = alt;
-    }
-  }
- ```
- 
- The bug is fixed since we create a new variable called, alt which stores the array. Before doing so, the array would overwrite at specific indices. Such as, the array (0,9,8) should be reversed to (8,9,0) but it results in (8,9,8).
- 
- 
- # PART 3 
- 
- Through Week 2, I learned to use Github to create my own repositories, I leaned to log in a remote server and access files created by other users. I also got create my own search engine. In week 3, I got familiarised with JUnit that I had not used previously. I also learned and understood the concept of bugs, and symptoms better.
- 
 
 
 
