@@ -19,6 +19,19 @@ In the second example I used "find * -size +5M" which gave all the files that we
 ## TYPE
 
 This used to get particular types, such as f is used to get files and d is used to get directories. <br> 
+Here, In the first example I used find * -type d to get all the directories.
+![Image](four.png) <br> 
+In the second example I used * -type d to get all the files. 
+![Image](five.png) <br> 
+
+
+## TIME
+
+This is used to find files based on the time they were last modified or accessed usimg -mtime and -atime respectively. <br> 
+For example, I used "find * -mtime +7" to get all the files that were modified more than 7 days ago.
+![Image](six.png) <br> 
+Next I used "find * -atime +8" to get all the files that were accessed more than 8 days ago. 
+![Image](seven.png) <br> 
 
 
 
