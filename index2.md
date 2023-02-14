@@ -36,9 +36,10 @@ Next I used "find * -atime +8" to get all the files that were accessed more than
 ## NAME
 
 In this I used multiple command-line operators to do specific tasks. 
-First, I used find travel guides/berlitzl/ -name "*.txt" -delete to delete all the .txt files in the berlitz one folder. This can be seen in the picture below, as I have displayed all the files before and after using the command using ls. 
+First, I used "find travel guides/berlitzl/ -name "*.txt" -delete" to delete all the .txt files in the berlitz one folder. This can be seen in the picture below, as I have displayed all the files before and after using the command using ls. 
 ![Image](eight.png) <br> 
-
+Then, I used a command to cat the file "California-History" to display the contents of that file. 
+![Image](nine.png) <br> 
 
 
 
