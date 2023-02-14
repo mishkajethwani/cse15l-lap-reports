@@ -14,7 +14,7 @@ To get files greater than or smaller than a certain size, this command is used. 
 For exmaple, In the first command I used *find * -size -10M*, which gave me all the files smaller than 10 MB.
 ![Image](two.png) <br> 
 In the second example I used "find * -size +5M" which gave all the files that were bigger in size than 5MB, which didnt exsist so it displayed nothing.
-![Image](one.png)<br> 
+![Image](three.png)<br> 
 
 ## TYPE
 
