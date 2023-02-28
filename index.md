@@ -2,8 +2,8 @@ After forking the repository I started the timer, and follwed the following step
 ## Log into ieng6
 
 The first step is to login to the your course specific ieng6 account. <br>
-Instead of typing in ssh cs15lwi23apx@ieng6.ucsd.edu, I used the Cntrl-R which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press <enter>. 
- So, for logging into my ieng6 account, I used Cntrl-R, typed ssh and pressed <enter>.
+Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press <enter>. 
+ So, for logging into my ieng6 account, I used **Cntrl-R**, typed ssh and pressed <enter>.
   ![Image](one1.png)
   
  ## Clone your fork of the repository from your Github account
