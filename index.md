@@ -5,8 +5,9 @@ The first step is to login to the your course specific ieng6 account. <br>
 Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press ```<enter>```. 
  So, for logging into my ieng6 account, I used **Cntrl-R**, typed ssh and pressed ```<enter>```.
   ![Image](one1.png)
-  
- # Clone your fork of the repository from your Github account
+
+
+## Clone your fork of the repository from your Github account
  
   After this to clone the repository, Ater copying the link from the githuib site. 
  I again used **Cntrl-R** and got access to the command history where on typing _"git c"_, I got the entire command and had to continue by pressing  ```<enter>```.
