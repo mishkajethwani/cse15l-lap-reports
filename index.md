@@ -1,5 +1,6 @@
-The first step is to login to the your course specific ieng6 account. 
-Instead of typing in ssh cs15lwi23apx@ieng6.ucsd.edu, I used the Cntrl-R which provided me with the command history where when I typed in "ssh" I got the entire command and just had to press <enter>. 
+The first step is to login to the your course specific ieng6 account. <br>
+Instead of typing in ssh cs15lwi23apx@ieng6.ucsd.edu, I used the Cntrl-R which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press <enter>. 
+ IMage
  So, for logging into my ieng6 account, I used Cntrl-R, typed ssh and pressed <enter>.
   
   After this to clone the repository, I again used Cntrl-R and got access to the command history where on typing "git c", I got the entire command nad had then press <enter>.
