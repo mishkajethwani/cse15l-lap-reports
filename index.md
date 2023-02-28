@@ -14,6 +14,7 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
  I again used **Cntrl-R** and got access to the command history where on typing _"git c"_, I got the entire command and had to continue by pressing  ```<enter>```.
   ![Image](two2.png)
  
+
 ## Run the tests, demonstrating that they fail
  
  Again to run the tests I used **Cntrl-R**, typed out javac, which prompted me to _javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java_ followed by ```<enter>```. 
