@@ -41,6 +41,8 @@ Instead of typing in ssh cs15lwi23apx@ieng6.ucsd.edu, I used the Cntrl-R which p
  Then to submit and push I put the commands to add, commit and push in the same line to save time. I did this separating the commands by a semicolon. I used the Cntrl-R to type out the first one i.e git add and then typed out the commant for commit and push in the same line seprating them by semicolons.
     ![Image](nine9.png)
  
+ Doing all of theese steps at first took me 14:23 but after using all these I could do it within 1:16
+ 
   
   
   
