@@ -13,6 +13,7 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
   ![Image](two2.png)
  
  ## Run the tests, demonstrating that they fail
+ 
  Again to run the tests I used **Cntrl-R**, typed out javac, which prompted me to _javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java_ followed by ```<enter>```. 
    ![Image](three3.png)
  and now, for the second command did the same but typed out just java, which prompted me to _java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore_.
@@ -37,6 +38,8 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
    ![Image](eight8.png)
  
  ## Commit and push the resulting change to your Github account 
+ <br>
+ 
  To go back to the terminal I pressed, **Cntrl-O ```<enter>``` Cntrl-X**. 
  Then to submit and push I put the commands to add, commit and push in the same line to save time. I did this separating the commands by a semicolon. I used the Cntrl-R to type out the first one i.e git add and then typed out the commant for commit and push in the same line seprating them by semicolons.
     ![Image](nine9.png)
