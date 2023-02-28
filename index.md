@@ -1,4 +1,4 @@
-After forking the repository I started the timer, and follwed the following steps to make it more efficient. <br>
+After forking the repository I started the timer, and follwed the following steps to increase my pace and be more efficient  <br>
 ## Log into ieng6
 
 The first step is to login to the your course specific ieng6 account. <br>
