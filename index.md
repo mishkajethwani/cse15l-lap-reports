@@ -10,11 +10,11 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
 
 ## Clone your fork of the repository from your Github account
  
-  After this to clone the repository, Ater copying the link from the githuib site. 
+ After this to clone the repository, Ater copying the link from the githuib site. 
  I again used **Cntrl-R** and got access to the command history where on typing _"git c"_, I got the entire command and had to continue by pressing  ```<enter>```.
   ![Image](two2.png)
  
- ## Run the tests, demonstrating that they fail
+## Run the tests, demonstrating that they fail
  
  Again to run the tests I used **Cntrl-R**, typed out javac, which prompted me to _javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java_ followed by ```<enter>```. 
    ![Image](three3.png)
@@ -32,11 +32,11 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
  ![Image](six6.png)
   ![Image](seven7.png)
   
- ## Run the tests, demonstrating that they now succeed
+## Run the tests, demonstrating that they now succeed
 
-   To run the tests, I used upper arrow keys: 
-  For the command javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ```<up><up><enter>```
-  and for, java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore I did,```<up<up><up><enter>.```
+   To run the tests, I used upper arrow keys: <br>
+  For the command javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ```<up><up><enter>```<br>
+  and for, java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore I did,```<up<up><up><enter>.```<br>
  Which now showed that the tests had passed. 
    ![Image](eight8.png)
  
