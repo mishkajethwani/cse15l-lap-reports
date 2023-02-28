@@ -31,8 +31,8 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
  ## Run the tests, demonstrating that they now succeed
 
    To run the tests, I used upper arrow keys: 
-  For the command javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ```**<up><up><enter>**```
-  and for, java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore I did,```**<up<up><up><enter>**.```
+  For the command javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ```<up><up><enter>```
+  and for, java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore I did,```<up<up><up><enter>.```
  Which now showed that the tests had passed. 
    ![Image](eight8.png)
  
