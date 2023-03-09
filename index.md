@@ -45,7 +45,7 @@ then I pressed ```<right><right><right><right><right><right><right><right><right
 ![Image](six6.png)
 ![Image](seven7.png)
 
-To save and exit I pressed the keys ```<Cntrl-O> <enter> <Cntrl-X>```. ```Cntrl-0``` saves it and ```<Cbtrl-X``` is used to exit. 
+To save and exit I pressed the keys ```<Cntrl-O> <enter> <Cntrl-X>```. ```Cntrl-0``` saves it and ```<Cntrl-X``` is used to exit. 
   
 ## Run the tests, demonstrating that they now succeed
 
