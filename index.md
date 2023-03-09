@@ -40,7 +40,7 @@ while(index2 < list2.size()) {
   index2 += 1;
 }
 ```
-then I pressed ```<right><right><right><right><right><right><right><right><right><right><right><backspace><2>``` to correct the error. After this I held down 
+then I pressed ```<right><right><right><right><right><right><right><right><right><right><right><backspace><2>``` to correct the error. After this I held down ```<up>``` to get to the very top of the file and typed in ```//fixed <enter>```
     
 ![Image](six6.png)
 ![Image](seven7.png)
