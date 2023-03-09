@@ -5,23 +5,23 @@ After forking the repository I started the timer, and follwed the following step
 hi (google.come)
 
 The first step is to login to the your course specific ieng6 account. <br>
-Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press ```<enter>```. 
- So, for logging into my ieng6 account, I used **Cntrl-R**, typed ssh and pressed ```<enter>```.
+Instead of typing in ```ssh cs15lwi23apx@ieng6.ucsd.edu```, I used the ```<Cntrl-R>``` which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press ```<enter>```. 
+ So, for logging into my ieng6 account, I used ```<Cntrl-R>```, typed ssh and pressed ```<enter>```.
   ![Image](one1.png)
 
 
 ## Clone your fork of the repository from your Github account
  
- After this to clone the repository, Ater copying the link from the githuib site. 
- I again used **Cntrl-R** and got access to the command history where on typing _"git c"_, I got the entire command and had to continue by pressing  ```<enter>```.
+ After this to clone the repository, Ater copying the link from the github site. 
+ I again used ```<Cntrl-R>``` and got access to the command history where on typing _"git c"_, I got the entire command and had to continue by pressing  ```<enter>```.
   ![Image](two2.png)
  
 
 ## Run the tests, demonstrating that they fail
  
- Again to run the tests I used **Cntrl-R**, typed out javac, which prompted me to _javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java_ followed by ```<enter>```. 
+ Again to run the tests I used ```<Cntrl-R>```, typed out javac, which prompted me to ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` followed by ```<enter>```. The following commands are used to run the JUnit tests from the terminal.
    ![Image](three3.png)
- and now, for the second command did the same but typed out just java, which prompted me to _java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore_.
+ and now, for the second command did the same but typed out just java, which prompted me to ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore```.
    ![Image](four4.png)
  This saved much more time since otherwise I would have to go to the course website, look for theese and then copy-paste them.
  After executing theese tests, we can see that they failed.
@@ -30,8 +30,16 @@ Instead of typing in _ssh cs15lwi23apx@ieng6.ucsd.edu_, I used the Cntrl-R which
  
 ## Edit the code file to fix the failing test
    
-  This showed one test failed, to fix the error I typed in nano ListExamples.java.
-  I fixed the error, which was in the last while statement where I had to change index1 to index 2, then scrolling all the way up and typing _"fixed"_ as a comment. 
+  This showed one test failed, to fix the error I typed in ```nano ListExamples.java```.
+  I fixed the error, which was in the last while statement where I had to change index1 to index2, then scrolling all the way up and typing _"fixed"_ as a comment.
+  I scrolled all the way down by holding ```<down>``` till I reached the last line of the 
+ ``` while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    } ```
+    
+    
+    
  ![Image](six6.png)
   ![Image](seven7.png)
   
