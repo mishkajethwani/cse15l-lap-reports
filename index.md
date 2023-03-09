@@ -62,9 +62,9 @@ To save and exit I pressed the keys ```<Cntrl-O> <enter> <Cntrl-X>```. ```Cntrl-
  Then to submit and push I put the commands to add, commit and push in the same line to save time. I did this separating the commands by a semicolon. I used the Cntrl-R to type out the first one i.e git add and then typed out the commant for commit and push in the same line seprating them by semicolons.
     ![Image](nine9.png)
     
-git add : The git add command the changes in the working directory. It tells git that you want to include updates to a particular file after committing. However, git add doesn't really affect the repository changes are not actually made to the repository until running git commit.
-git commit : The modified files are staged using git add, and following a commit, all files in the staging area are snapshotted and become part of the repository's history.
-git push : The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository.
+git add : The git add command the changes in the working directory. It tells git that you want to include updates to a particular file after committing. However, git add doesn't really affect the repository changes are not actually made to the repository until running git commit.<br>
+git commit : The modified files are staged using git add, and following a commit, all files in the staging area are snapshotted and become part of the repository's history.<br>
+git push : The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository.<br>
 
  
  Doing all of theese steps at first took me 14:23 but after using all these I could do it within 1:16.
