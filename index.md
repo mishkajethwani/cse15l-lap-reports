@@ -32,31 +32,40 @@ Instead of typing in ```ssh cs15lwi23apx@ieng6.ucsd.edu```, I used the ```<Cntrl
    
   This showed one test failed, to fix the error I typed in ```nano ListExamples.java```.
   I fixed the error, which was in the last while statement where I had to change index1 to index2, then scrolling all the way up and typing _"fixed"_ as a comment.
-  I scrolled all the way down by holding ```<down>``` till I reached the last line of the 
- ``` while(index2 < list2.size()) {
-      result.add(list2.get(index2));
-      index2 += 1;
-    } ```
+  I scrolled all the way down by holding ```<down>``` till I reached the last line of the following command: 
+ 
+```
+while(index2 < list2.size()) {
+  result.add(list2.get(index2));
+  index2 += 1;
+}
+```
+then I pressed ```<right><right><right><right><right><right><right><right><right><right><right><backspace><2>``` to correct the error. After this I held down 
     
-    
-    
- ![Image](six6.png)
-  ![Image](seven7.png)
+![Image](six6.png)
+![Image](seven7.png)
+
+To save and exit I pressed the keys ```<Cntrl-O> <enter> <Cntrl-X>```. ```Cntrl-0``` saves it and ```<Cbtrl-X``` is used to exit. 
   
 ## Run the tests, demonstrating that they now succeed
 
    To run the tests, I used upper arrow keys: <br>
-  For the command javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ```<up><up><enter>```<br>
-  and for, java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore I did,```<up<up><up><enter>.```<br>
+  For the command ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ``` ```<up><up><enter>```<br>
+  and for, ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore``` I did,```<up<up><up><enter>.```<br>
  Which now showed that the tests had passed. 
    ![Image](eight8.png)
  
 ## Commit and push the resulting change to your Github account 
  <br>
  
- To go back to the terminal I pressed, **Cntrl-O ```<enter>``` Cntrl-X**. 
+ To go back to the terminal I pressed, ```Cntrl-O <enter> Cntrl-X```. 
  Then to submit and push I put the commands to add, commit and push in the same line to save time. I did this separating the commands by a semicolon. I used the Cntrl-R to type out the first one i.e git add and then typed out the commant for commit and push in the same line seprating them by semicolons.
     ![Image](nine9.png)
+    
+git add : The git add command the changes in the working directory. It tells git that you want to include updates to a particular file after committing. However, git add doesn't really affect the repository changes are not actually made to the repository until running git commit.
+git commit : The modified files are staged using git add, and following a commit, all files in the staging area are snapshotted and become part of the repository's history.
+git push : The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository.
+
  
  Doing all of theese steps at first took me 14:23 but after using all these I could do it within 1:16
  
