@@ -67,7 +67,7 @@ git commit : The modified files are staged using git add, and following a commit
 git push : The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository.
 
  
- Doing all of theese steps at first took me 14:23 but after using all these I could do it within 1:16
+ Doing all of theese steps at first took me 14:23 but after using all these I could do it within 1:16.
  
   
   
