@@ -46,8 +46,8 @@ Next I used ```grep -n California  written-results.txt```, to find all the files
 
 ## -o
 The -o option in grep stands for "only matching" or "show only the matched part of a line".
-
 When used with grep, -o will display only the parts of a line that match the search pattern. This can be useful when you want to extract a specific part of a line that matches a certain pattern or when you want to count the number of occurrences of a specific pattern in a file.
+To learn how to use this command I used [this](https://www.ibm.com/docs/da/aix/7.1?topic=files-finding-text-strings-within-grep-command) resource.
 First, I did ```grep -o Japan  written-results.txt ```
 ![Image](9.png) <br> 
 Then, I used a command ```grep -o Cancun written-results.txt``` 
