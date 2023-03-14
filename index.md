@@ -10,7 +10,7 @@ I decided to use the the following four commands: <br>
 1. -i: Perform a case-insensitive search <br> 
 2. -v: Invert the match, i.e., select non-matching lines. <br>
 3. -n: Precede each matched line with its line number in the file. <br>
-4. -l: Only print the names of files that contain a match, not the matching lines themselves. <br>
+4. -o: Only prints the matching part of the file. <br>
 
 I also did man grep on the terminal to see the different options.
 
