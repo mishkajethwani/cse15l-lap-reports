@@ -1,74 +1,58 @@
-After forking the repository I started the timer, and follwed the following steps to increase my pace and be more efficient  <br>
+## Lab Report 5
 
-## Log into ieng6
+I learned a lot about the find command while doing lab report 3, so I decided to use do the same exploration for the grep command instead this time.
 
-hi (google.come)
+### Researching Commands 
 
-The first step is to login to the your course specific ieng6 account. <br>
-Instead of typing in ```ssh cs15lwi23apx@ieng6.ucsd.edu```, I used the ```<Cntrl-R>``` which provided me with the command history where when I typed in "ssh" I got the entire command prompted and just had to press ```<enter>```. 
- So, for logging into my ieng6 account, I used ```<Cntrl-R>```, typed ssh and pressed ```<enter>```.
-  ![Image](one1.png)
+I decided to choose the command grep and find 4 interesting command-line options to use with it. To do so, I asked chat gpt for suggestions. <br>
+![Image](2.png)
+I decided to use the the following four commands: <br>
+1. -i: Perform a case-insensitive search <br> 
+2. -v: Invert the match, i.e., select non-matching lines. <br>
+3. -n: Precede each matched line with its line number in the file. <br>
+4. -l: Only print the names of files that contain a match, not the matching lines themselves. <br>
+
+I also did man grep on the terminal to see the different options.
 
 
-## Clone your fork of the repository from your Github account
- 
- After this to clone the repository, Ater copying the link from the github site. 
- I again used ```<Cntrl-R>``` and got access to the command history where on typing _"git c"_, I got the entire command and had to continue by pressing  ```<enter>```.
-  ![Image](two2.png)
- 
+### -i
 
-## Run the tests, demonstrating that they fail
- 
- Again to run the tests I used ```<Cntrl-R>```, typed out javac, which prompted me to ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` followed by ```<enter>```. The following commands are used to run the JUnit tests from the terminal.
-   ![Image](three3.png)
- and now, for the second command did the same but typed out just java, which prompted me to ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore```.
-   ![Image](four4.png)
- This saved much more time since otherwise I would have to go to the course website, look for theese and then copy-paste them.
- After executing theese tests, we can see that they failed.
-  ![Image](five5.png)
- 
- 
-## Edit the code file to fix the failing test
-   
-  This showed one test failed, to fix the error I typed in ```nano ListExamples.java```.
-  I fixed the error, which was in the last while statement where I had to change index1 to index2, then scrolling all the way up and typing _"fixed"_ as a comment.
-  I scrolled all the way down by holding ```<down>``` till I reached the last line of the following command: 
- 
-```
-while(index2 < list2.size()) {
-  result.add(list2.get(index2));
-  index2 += 1;
-}
-```
-then I pressed ```<right><right><right><right><right><right><right><right><right><right><right><backspace><2>``` to correct the error. After this I held down ```<up>``` to get to the very top of the file and typed in ```//fixed <enter>```.
-    
-![Image](six6.png)
-![Image](seven7.png)
+I used [this](https://www.ionos.com/digitalguide/server/configuration/linux-grep-command/#:~:text=The%20basic%20syntax%20of%20grep,in%20a%20file%20named%20%E2%80%9Cexample.) to research about this particular command.
+-i, ignore-case
+It is used to perform case insensitive matching. By default, grep is case sensitive. The -i option is used to perform a case-insensitive search with grep.
+For exmaple, In the first command I used ``` grep -i bali written-results.txt  ```, where I typed Bali in all lower case and got the appropriate results regardless.
+![Image](3.png) <br> 
+In the second example I used ```grep -i INDIA  written-results.txt```, where I typed India in all uppercase, but got the appropriate results.
+![Image](4.png)<br> 
 
-To save and exit I pressed the keys ```<Cntrl-O> <enter> <Cntrl-X>```. ```Cntrl-0``` saves it and ```<Cntrl-X``` is used to exit. 
-  
-## Run the tests, demonstrating that they now succeed
+## -v
+I used the [following site](https://www.warp.dev/terminus/make-grep-case-insensitive#:~:text=To%20recap%2C%20the%20grep%20command,or%20%E2%80%94ignore%2Dcase%20flag.) to research about this particular command.
 
-   To run the tests, I used upper arrow keys: <br>
-  For the command ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java, I did ``` ```<up><up><enter>```<br>
-  and for, ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore``` I did,```<up<up><up><enter>.```<br>
- Which now showed that the tests had passed. 
-   ![Image](eight8.png)
- 
-## Commit and push the resulting change to your Github account 
- <br>
- 
- To go back to the terminal I pressed, ```Cntrl-O <enter> Cntrl-X```. 
- Then to submit and push I put the commands to add, commit and push in the same line to save time. I did this separating the commands by a semicolon. I used the Cntrl-R to type out the first one i.e git add and then typed out the commant for commit and push in the same line seprating them by semicolons.
-    ![Image](nine9.png)
-    
-git add : The git add command the changes in the working directory. It tells git that you want to include updates to a particular file after committing. However, git add doesn't really affect the repository changes are not actually made to the repository until running git commit.<br>
-git commit : The modified files are staged using git add, and following a commit, all files in the staging area are snapshotted and become part of the repository's history.<br>
-git push : The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository.<br>
+The -v option in grep stands for "invert match" or "exclude". When used with the grep command, it tells grep to display all the lines that do not match the given pattern.<br> 
+Here, In the first example I used ```grep -v India written-results.txt```, through this I could get all the files that did not include India.
+![Image](5.png) <br> 
+In the second example I used ```grep -v Berk  written-results.txt ``` to get all the files that did not include Berk in it.
+![Image](6.png) <br> 
 
- 
- Doing all of theese steps at first took me 14:23 but after using all these I could do it within 1:16.
- 
+
+## -n
+To learn more about -n I used [this site](https://www.ionos.com/digitalguide/server/configuration/linux-grep-command/#:~:text=A%20simple%20use%20case%20for,%3A%20grep%20%E2%80%9Ctest%E2%80%9D%20example).
+The -n option in the grep command stands for "line number". When used with grep, it displays the line numbers of each matched line in the output.
+ <br> 
+For example, I used ``` grep -n Berk  written-results.txt```, to find which all line numbers have Berk.
+![Image](7.png) <br> 
+Next I used ```grep -n California  written-results.txt```, to find all the files with the corresponding line number for California. 
+![Image](8.png) <br> 
+
+## -o
+The -o option in grep stands for "only matching" or "show only the matched part of a line".
+When used with grep, -o will display only the parts of a line that match the search pattern. This can be useful when you want to extract a specific part of a line that matches a certain pattern or when you want to count the number of occurrences of a specific pattern in a file.
+To learn how to use this command I used [this](https://www.ibm.com/docs/da/aix/7.1?topic=files-finding-text-strings-within-grep-command) resource.
+First, I did ```grep -o Japan  written-results.txt ```
+![Image](9.png) <br> 
+Then, I used a command ```grep -o Cancun written-results.txt``` 
+![Image](10.png) <br> 
+
   
   
   
